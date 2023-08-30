@@ -1,7 +1,7 @@
 # DFS implementation using python
 
 '''  
-    Consider the following Graph for DFS implementation
+    Consider the following Graph for DFS implementation numbers represnts nodes and - represents edge
     
                    10                   
                   /  \   
