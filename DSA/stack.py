@@ -21,16 +21,45 @@ class Stack:
     def size(self):
         return len(self.stack)
     
-s = Stack()
 
-s.push(10)
-s.push(20)
-s.push(30)
-s.push(40)
-s.push(50)
-s.pop()
-s.peek()
-s.is_empty()
-s.size()
+#using stack to verify a symbols are balanced are not
+# def is_match(ch1, ch2):
+#     match_dict = {
+#         ')': '(',
+#         ']': '[',
+#         '}': '{'
+#     }
+#     return match_dict[ch1] == ch2
+
+
+# def is_balanced(s):
+#     stack = Stack()
+#     for ch in s:
+#         if ch=='(' or ch=='{' or ch == '[':
+#             stack.push(ch)
+#         if ch==')' or ch=='}' or ch == ']':
+#             if stack.size()==0:
+#                 return False
+#             if not is_match(ch,stack.pop()):
+#                 return False
+
+#     return stack.size()==0
+
+#using stack to reverse a string
+
+def reverse_string(s):
+    stack = Stack()
+
+    for ch in s:
+        stack.push(ch)
+
+    rstr = ''
+    while stack.size()!=0:
+        rstr += stack.pop()
+
+    return rstr   
+
+if __name__ == '__main__':
+    print(reverse_string("Onepiece is the best"))
 
 
