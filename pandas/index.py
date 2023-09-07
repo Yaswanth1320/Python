@@ -1,6 +1,6 @@
-import pandas as pd
+# import pandas
 
-df = pd.read_csv('AnimeWorld.csv')
 
-print(df.to_string()) 
+
+
 
